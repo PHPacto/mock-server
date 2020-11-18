@@ -21,12 +21,12 @@
 
 namespace PHPacto\MockServer\Delivery;
 
-use Bigfoot\PHPacto\Logger\Logger;
-use Bigfoot\PHPacto\Matcher\Mismatches\Mismatch;
-use Bigfoot\PHPacto\Matcher\Mismatches\MismatchCollection;
-use Bigfoot\PHPacto\Pact;
-use Bigfoot\PHPacto\PactRequestInterface;
-use Bigfoot\PHPacto\PactResponseInterface;
+use PHPacto\Logger\Logger;
+use PHPacto\Matcher\Mismatches\Mismatch;
+use PHPacto\Matcher\Mismatches\MismatchCollection;
+use PHPacto\Pact;
+use PHPacto\PactRequestInterface;
+use PHPacto\PactResponseInterface;
 use Laminas\Diactoros\ServerRequest;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
