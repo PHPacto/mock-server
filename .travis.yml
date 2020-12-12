@@ -12,9 +12,6 @@ env:
 
 matrix:
   fast_finish: true
-  allow_failures:
-    - php: 8.0
-    - php: nightly
 
 install:
   - composer install -n
