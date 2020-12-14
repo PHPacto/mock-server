@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cedd71171751000bf4cbe888c5ca881",
+    "content-hash": "f5031f45a8b3032664f69df611ab7e59",
     "packages": [
         {
             "name": "bigfoot90/phpacto",
-            "version": "0.4.3",
+            "version": "0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPacto/phpacto.git",
-                "reference": "74fd64e508f6581744343fafe576154fdedfe54e"
+                "reference": "6015c5e45d8034f0bae531d382284d245c896f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPacto/phpacto/zipball/74fd64e508f6581744343fafe576154fdedfe54e",
-                "reference": "74fd64e508f6581744343fafe576154fdedfe54e",
+                "url": "https://api.github.com/repos/PHPacto/phpacto/zipball/6015c5e45d8034f0bae531d382284d245c896f63",
+                "reference": "6015c5e45d8034f0bae531d382284d245c896f63",
                 "shasum": ""
             },
             "require": {
@@ -63,9 +63,9 @@
             ],
             "description": "Contract testing tool integrated with Guzzle and Phpunit",
             "support": {
-                "source": "https://github.com/PHPacto/phpacto/tree/0.4.3"
+                "source": "https://github.com/PHPacto/phpacto/tree/0.4.4"
             },
-            "time": "2020-12-12T02:21:19+00:00"
+            "time": "2020-12-14T09:46:50+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -2284,16 +2284,16 @@
         },
         {
             "name": "phar-io/version",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/version.git",
-                "reference": "726c026815142e4f8677b7cb7f2249c9ffb7ecae"
+                "reference": "e4782611070e50613683d2b9a57730e9a3ba5451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/version/zipball/726c026815142e4f8677b7cb7f2249c9ffb7ecae",
-                "reference": "726c026815142e4f8677b7cb7f2249c9ffb7ecae",
+                "url": "https://api.github.com/repos/phar-io/version/zipball/e4782611070e50613683d2b9a57730e9a3ba5451",
+                "reference": "e4782611070e50613683d2b9a57730e9a3ba5451",
                 "shasum": ""
             },
             "require": {
@@ -2329,9 +2329,9 @@
             "description": "Library for handling version information and constraints",
             "support": {
                 "issues": "https://github.com/phar-io/version/issues",
-                "source": "https://github.com/phar-io/version/tree/3.0.3"
+                "source": "https://github.com/phar-io/version/tree/3.0.4"
             },
-            "time": "2020-11-30T09:21:21+00:00"
+            "time": "2020-12-13T23:18:30+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
