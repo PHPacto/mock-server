@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95fd3f09f6b4ccec1ad3c2bf4bd21813",
+    "content-hash": "afb67b9cf03b76f0ab5a96087a825926",
     "packages": [
         {
             "name": "bigfoot90/phpacto",
-            "version": "dev-master",
+            "version": "0.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPacto/phpacto.git",
-                "reference": "08128468429f553a7191b0a4612b3c78a81f693f"
+                "reference": "d28c1573f808de2b565091c15d8727665c665cb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPacto/phpacto/zipball/08128468429f553a7191b0a4612b3c78a81f693f",
-                "reference": "08128468429f553a7191b0a4612b3c78a81f693f",
+                "url": "https://api.github.com/repos/PHPacto/phpacto/zipball/d28c1573f808de2b565091c15d8727665c665cb0",
+                "reference": "d28c1573f808de2b565091c15d8727665c665cb0",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,6 @@
                 "namshi/cuzzle": "Generates cUrl command out of you PHPacto contracts",
                 "phpunit/phpunit": "Integration with PHPUnit testing framework"
             },
-            "default-branch": true,
             "bin": [
                 "bin/phpacto"
             ],
@@ -68,9 +67,9 @@
             ],
             "description": "Contract testing tool integrated with Guzzle and Phpunit",
             "support": {
-                "source": "https://github.com/PHPacto/phpacto/tree/0.4.5"
+                "source": "https://github.com/PHPacto/phpacto/tree/0.4.6"
             },
-            "time": "2021-02-02T01:27:43+00:00"
+            "time": "2021-02-20T01:27:17+00:00"
         },
         {
             "name": "fig/http-message-util",
@@ -4211,9 +4210,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bigfoot90/phpacto": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
