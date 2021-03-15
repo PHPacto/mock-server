@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "bigfoot90/phpacto": "0.4.6",
+        "bigfoot90/phpacto": "0.5.0",
         "laminas/laminas-diactoros": "^2.4",
         "laminas/laminas-httphandlerrunner": "^1.2",
         "laminas/laminas-stratigility": "^3.3",
