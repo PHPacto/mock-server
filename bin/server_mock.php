@@ -81,7 +81,25 @@ $server = new \Laminas\HttpHandlerRunner\RequestHandlerRunner(
     $app,
     new \Laminas\HttpHandlerRunner\Emitter\SapiEmitter(),
     static function(): ServerRequestInterface {
-        return HttpFactory::serverRequestFactory()::fromGlobals();
+        $request = HttpFactory::serverRequestFactory()->createServerRequest(
+            $_SERVER['REQUEST_METHOD'] ?? 'GET',
+            $_SERVER['REQUEST_URI'] ?? '/'
+        );
+
+        // Add request headers
+        foreach ($_SERVER as $name => $value) {
+            if (strpos($name, 'HTTP_') === 0) {
+                // Rimuove "HTTP_" e sostituisce "_" con "-" per ottenere i nomi degli header corretti
+                $headerName = str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))));
+                $request = $request->withHeader($headerName, $value);
+            }
+        }
+
+        // Add request body
+        $bodyStream = HttpFactory::streamFactory()->createStreamFromFile('php://input', 'r');
+        $request = $request->withBody($bodyStream);
+
+        return $request;
     },
     static function(\Throwable $t) use ($logger): ResponseInterface {
         $logger->log($t->getMessage());

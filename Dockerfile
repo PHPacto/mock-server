@@ -1,4 +1,4 @@
-FROM php:8.0-alpine
+FROM php:8.3-alpine
 
 RUN apk add --update git
 
@@ -12,7 +12,7 @@ WORKDIR /srv
 ENV CONTRACTS_DIR=examples
 RUN composer install --optimize-autoloader
 
-ARG DOCKER_TAG=test
+ARG DOCKER_TAG
 RUN VERSION=`echo ${DOCKER_TAG}| egrep "^([0-9.]+)$" | sed -e s/pr//` && \
     if [ -n "$VERSION" ]; then \
         echo "VERSION $VERSION"; \
