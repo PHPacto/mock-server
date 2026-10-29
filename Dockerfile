@@ -1,4 +1,4 @@
-FROM php:8.3-alpine AS dev
+FROM php:8.5-alpine AS dev
 
 RUN apk add --update git
 
@@ -8,7 +8,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin  
 # Start
 WORKDIR /srv
 USER www-data
-CMD php -S 0.0.0.0:8000 bin/server_mock.php
+CMD cat BANNER && php -S 0.0.0.0:8000 bin/server_mock.php
 EXPOSE 8000
 
 

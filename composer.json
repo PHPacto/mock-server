@@ -12,15 +12,15 @@
   ],
   "require": {
     "php": ">=8.2",
-    "bigfoot90/phpacto": "1.0.4",
-    "laminas/laminas-diactoros": "^2.4",
-    "laminas/laminas-httphandlerrunner": "*",
-    "laminas/laminas-stratigility": "^3.3",
+    "bigfoot90/phpacto": "1.0.5",
+    "laminas/laminas-diactoros": "^3.9",
     "nyholm/psr7": "^1.8",
     "symfony/finder": "^5"
   },
   "require-dev": {
-    "phpunit/phpunit": "^9.5"
+    "laminas/laminas-httphandlerrunner": "*",
+    "laminas/laminas-stratigility": "^3.3",
+    "phpunit/phpunit": "^9.6"
   },
   "config": {
     "preferred-install": "dist",
