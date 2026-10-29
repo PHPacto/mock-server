@@ -27,7 +27,7 @@ class ServerMockTest extends TestCase
 {
     public function test_it_has_pacto_example_contract()
     {
-        $output = `CONTRACTS_DIR=examples/ php bin/server_mock.php 2>&1`;
+        $output = shell_exec('CONTRACTS_DIR=examples/ php bin/server_mock.php 2>&1');
 
         self::assertStringContainsString('This is your first API contract', $output);
     }
