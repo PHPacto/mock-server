@@ -1,42 +1,56 @@
 {
-    "name": "phpacto/mock-server",
-    "description": "Contract testing tool integrated with Guzzle and Phpunit",
-    "license": "GPL-3.0",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Damian Długosz",
-            "email": "bigfootdd@gmail.com",
-            "homepage": "https://github.com/bigfoot90"
-        }
-    ],
-    "require": {
-        "php": ">=8.2",
-        "bigfoot90/phpacto": "1.0.2",
-        "laminas/laminas-diactoros": "^2.4",
-        "laminas/laminas-httphandlerrunner": "*",
-        "laminas/laminas-stratigility": "^3.3",
-        "nyholm/psr7": "^1.8",
-        "symfony/finder": "^5"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "autoload": {
-        "psr-4": {
-            "PHPacto\\MockServer\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "PHPacto\\MockServer\\": "tests/"
-        }
-    },
-    "archive": {
-        "exclude": ["docs/", "examples/", "tests/", "vendor/", "composer.lock", ".circleci/", ".travis.yml"]
+  "name": "phpacto/mock-server",
+  "description": "Contract testing tool integrated with Guzzle and Phpunit",
+  "license": "GPL-3.0",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Damian D\u0142ugosz",
+      "email": "bigfootdd@gmail.com",
+      "homepage": "https://github.com/bigfoot90"
     }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "bigfoot90/phpacto": "1.0.4",
+    "laminas/laminas-diactoros": "^2.4",
+    "laminas/laminas-httphandlerrunner": "*",
+    "laminas/laminas-stratigility": "^3.3",
+    "nyholm/psr7": "^1.8",
+    "symfony/finder": "^5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "advisories": {
+      "block": false
+    },
+    "audit": {
+      "block-insecure": false
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPacto\\MockServer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPacto\\MockServer\\": "tests/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "docs/",
+      "examples/",
+      "tests/",
+      "vendor/",
+      "composer.lock",
+      ".circleci/",
+      ".travis.yml"
+    ]
+  }
 }
